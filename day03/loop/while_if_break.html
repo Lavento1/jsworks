@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반복문 - while</title>
+    <title>반복 조건문</title>
 </head>
 <body>
-    <h2>반복문</h2>
-
+    
     <script>
         var n = 0;
 
-        while(n < 10){
+        while(true){
+            // n += 1;
             n++;
-            document.write("Hello~<br>" + n + "<br>");
+            if(n > 10){
+                break;
+            }
+            document.write(n + "<br>");
         }
-        document.write("종료");
     </script>
 </body>
 </html>
