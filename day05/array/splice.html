@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 특정 요소 추가, 삭제</title>
+</head>
+<body>
+    <h2>배열의 특정 요소 추가, 삭제</h2>
+
+    <script>
+        var animal = ["cow", "horse", "pig", "cat"];
+
+        animal.splice(1, 0, "chicken");
+
+        for(var i = 0; i < animal.length; i++){
+            document.write(animal[i] + "<br>");
+        }
+    </script>
+</body>
+</html>
