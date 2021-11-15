@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 연산</title>
+</head>
+<body>
+    <h2>배열의 연산</h2>
+
+    <script>
+        // 이름이 numbers인 빈 배열 정의
+        var numbers = [];
+        var sum = 0;
+        var avg = 0;
+
+        numbers = [90, 85, 80];
+        numbers[3] = 70;
+
+        numbers.length;
+
+        document.write("배열의 개수 : " + numbers.length + "<br>");
+
+        // document.write(numbers);
+        for(var i = 0; i < numbers.length; i++){
+            sum = sum + numbers[i];
+            document.write("numbers[" + i +"] = " + numbers[i] + "<br>");
+        }
+        avg = sum/numbers.length;
+
+        document.write("합계 : " + sum + "<br>");
+        document.write("평균 : " + avg);
+    </script>
+</body>
+</html>
